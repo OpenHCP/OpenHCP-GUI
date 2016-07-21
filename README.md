@@ -1,6 +1,10 @@
 # OpenHCP WebGUI
 ==================
 
+## Prepare project
+
+After clone repo run ```npm install``` 
+
 ## Debug your app ##
 
 The full featured `dev/dist` tools are provided, it's easy to start debugging your app.
