@@ -32,7 +32,7 @@ class Entrance {
             if (Splash.isRunning()) {
                 _this.destroySplash();
             }
-        }, 100);
+        }, 500);
     }
 
     launch() {

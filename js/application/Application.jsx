@@ -2,7 +2,7 @@
 
 import React from 'react';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import lightTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+import lightTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';

@@ -21,7 +21,6 @@ class Panel extends React.Component {
             minHeight: '350px',
             margin: '5px auto 0 auto',
             paddingBottom: '10px',
-            backgroundColor: '#fff',
             textAlign: 'center'
         };
         if (UI.windowWidth() <= UI.BREAK_POINT) {
