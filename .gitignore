@@ -1,1 +1,14 @@
-/js/config.js
+#css
+css
+
+#build
+build
+
+#mac
+.DS_Store
+
+npm-debug.log
+
+*.bundle.js
+
+node_modules

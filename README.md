@@ -1,22 +1,52 @@
-# IT'S NOT EVEN ALPHA!!!
-# DO NOT USE IT IF YOU'RE NOT POWERUSER/ADMIN!!!
+# OpenHCP WebGUI
+==================
 
-## Open Hosting Control Panel - OpenHCP GUI
+## Debug your app ##
 
-Assumptions:
-- free / libre (ISC License) control panel for hosting
-- only HTML + JavaScript - can be served from RO drive
+The full featured `dev/dist` tools are provided, it's easy to start debugging your app.
 
-Plans (it's easier to say what is done...):
-- ReactJS
-- use of templates for GUI
+Just move into the created directory with the given `project name`.
 
-## How to install (scripts will replace your packages and configs - you have been warned!)
+Run `npm start` to start a debug web server for the project.
 
-1. git clone https://github.com/OpenHCP/OpenHCP-GUI.git
-2. copy js/config.sample.js to js/config.js and specify there your OpenHCP API URI (use TLS, Luke!)
-3. put everything to directory accessible via HTTP(s!)
+Open [http://localhost:8080/](http://localhost:8080/) to see the playable skeleton, and have fun.
 
-## features (what is working now)
 
-- nothing that I know of... :P
+## Release your app ##
+
+> Release means, generate output bundles by using `webpack`. It's good using the released resources as your production code.
+
+Move the root of the created project.
+
+Run `npm run dist` to compile all the source code into webpack bundles. And all required resources are generated into `{root}/build/`.
+
+You can copy the `build` folder to anywhere you like, it's the released app.
+
+### Like have a try with the released app? ###
+
+Install [sero-cli](https://github.com/leftstick/Sero-cli): `npm install -g sero-cli`
+
+Move into `{root}/build/`
+
+Run `sero server -p 8080 -h`, a static web server launched at port 8080.
+
+Open [http://localhost:8080](http://localhost:8080) to watch the released version
+
+
+## References ##
+
+1. [webpack](http://webpack.github.io/)
+2. [es6-features](https://github.com/lukehoban/es6features)
+3. [react](http://facebook.github.io/react/)
+4. [material-ui](http://material-ui.com)
+
+
+## LICENSE ##
+
+ISC License
+
+Copyright (c) 2016, OpenHCP Team
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
